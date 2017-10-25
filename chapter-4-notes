@@ -1,0 +1,38 @@
+== is a method
+<< append to the end
+nil? method on any value in ruby asking, "Are you empty?"
+
+if, elsif, else all check for a POSITIVE CHARGE.
+gets - kernel method like print 
+  - pauses Ruby to let you type. When enter is pressed, it returns a string with what you typed
+
+reverse - a string method
+upcase - string method that capitalized characters in a string
+
+HASHES
+key-value pairs
+each -    hurries through all of the pairs of the hash
+gsub -    global substitution
+        - used to search and replace 
+        - first argument = word to find, second argument = word to replace the first word with
+strip - a method that trims spaces and blank lines
+
+Kernel - center of Ruby's universe 
+File class - read, rename, and delete files
+
+Dir::[] - searches a directory (folders)
+p - prints anything 
+
+blocks -  code that is grouped together if you used arrows inside an array, you'll end up with a Hash inside an array
+
+ex: 
+kitty_toys = [
+  {:shape => 'sock', :fabric => 'cashmere'},
+  {:shape => 'mouse', :fabric => 'calico'},
+  {:shape => 'eggroll', :fabric => 'cashmere'},
+]
+
+sort_by  - iterator. iterates through a list of things
+kitty_toys.sort_by {|toy| toy[:shape]} each do |toy|
+  puts "Blixy has a #{toy[:shape]} made of #{toy[:fabric]}
+end 
